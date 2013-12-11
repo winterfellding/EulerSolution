@@ -4,7 +4,7 @@ def biggestPrimerFactor(num):
   i = 2
   factor = 1
   sqrtNum = math.sqrt(num)
-  while i < sqrtNum:
+  while i <= sqrtNum:
     if num % i == 0:
       num = num / i
       factor = i
@@ -15,3 +15,4 @@ def biggestPrimerFactor(num):
 if __name__ == '__main__':
   print biggestPrimerFactor(13195)
   print biggestPrimerFactor(600851475143)
+  print biggestPrimerFactor(121)
