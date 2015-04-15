@@ -11,10 +11,11 @@ print(len(li))
 # 1 is not primary number
 li[0] = 0
 for i in range(2, math.floor(math.sqrt(length)) + 1):
-    j = 2 * i - 1
-    while j < length:
-        li[j] = 0
-        j += i
+    if i % 2 == 1 or i == 2:
+        j = 2 * i - 1
+        while j < length:
+            li[j] = 0
+            j += i
     
 print(len(li))
 res = 0
